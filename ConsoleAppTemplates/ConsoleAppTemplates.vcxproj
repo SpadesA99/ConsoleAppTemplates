@@ -135,32 +135,42 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)bin</OutDir>
+    <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_d_static</TargetName>
     <OutDir>$(SolutionDir)bin</OutDir>
-    <TargetName>$(ProjectName)_static</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)bin</OutDir>
+    <TargetName>$(ProjectName)_r</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)_r_static</TargetName>
     <OutDir>$(SolutionDir)bin</OutDir>
-    <TargetName>$(ProjectName)_static</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_d_x64</TargetName>
+    <OutDir>$(SolutionDir)bin</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_d_static_x64</TargetName>
+    <OutDir>$(SolutionDir)bin</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)_r_x64</TargetName>
+    <OutDir>$(SolutionDir)bin</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)_r_static_x64</TargetName>
+    <OutDir>$(SolutionDir)bin</OutDir>
   </PropertyGroup>
   <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">
     <VcpkgUseStatic>true</VcpkgUseStatic>
